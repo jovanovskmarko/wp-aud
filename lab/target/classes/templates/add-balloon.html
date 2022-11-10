@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="container">
+    <form th:method="POST" th:action="/balloons/add">
+        <div>
+            <label for="name">Balloon name</label>
+            <input type="text" id="name" name="name" th:value="" required placeholder="Enter balloon name">
+
+            <label for="description">Balloon description</label>
+            <input type="text" id="description" name="description" th:value="" required placeholder="Enter balloon description">
+
+            <label for="name">Balloon id</label>
+            <input type="text" id="id" name="id" th:value="" required placeholder="Enter balloon id">
+
+        </div>
+    </form>
+</div>
+</body>
+</html>
